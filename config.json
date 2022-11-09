@@ -2,6 +2,7 @@
   "name": "Marcus Vieira",
   "position": "Front-End Web Developer",
   "github": "mvlima",
+  "banner": "https://images.unsplash.com/photo-1617803676663-3aa36f6d148c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
   "playlists": {
     "games": [
       {
@@ -102,6 +103,11 @@
         "thumbnail": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
       },
       {
+        "title": "O que é o C#? #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
+        "thumbnail": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
+      },
+      {
         "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
         "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
         "thumbnail": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
@@ -115,11 +121,6 @@
         "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
         "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
         "thumbnail": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
-      },
-      {
-        "title": "O que é o C#? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
-        "thumbnail": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
       }
     ]
   }

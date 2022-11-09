@@ -26,10 +26,14 @@ function HomePage() {
 export default HomePage;
 
 const StyledHeader = styled.div`
-  img {
+  .profile-picture {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+  }
+
+  .banner {
+    width: 100%;
   }
 
   .user-info {
@@ -45,14 +49,14 @@ const StyledHeader = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      {/* <img src="banner" alt="banner" /> */}
+      <img className="banner" src={config.banner} alt="banner" />
 
       <section className="user-info">
         <img
           src={`https://github.com/${config.github}.png`}
+          className="profile-picture"
           alt="Profile Picture"
         />
-
         <div>
           <h2>{config.name}</h2>
           <p>{config.position}</p>
