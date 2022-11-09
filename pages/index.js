@@ -34,10 +34,11 @@ const StyledHeader = styled.div`
 
   .banner {
     width: 100%;
+    height: 18rem;
+    object-fit: cover;
   }
 
   .user-info {
-    margin-top: 3.5rem;
     display: flex;
     align-items: center;
     width: 100%;
