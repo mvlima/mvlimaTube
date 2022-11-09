@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/index",{
+
+/***/ "./config.json":
+/*!*********************!*\
+  !*** ./config.json ***!
+  \*********************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = JSON.parse('{"name":"Marcus Vieira","position":"Front-End Web Developer","github":"mvlima","playlists":{"games":[{"title":"Sometimes Plans Change... (and How it Happens) | Verde Beach 108","url":"https://www.youtube.com/watch?v=CHBvJYSGOEE&ab","thumbnail":"https://img.youtube.com/vi/CHBvJYSGOEE/hqdefault.jpg"},{"title":"THIS is the Best Stadium District that I\'ve Ever Built! | Verde Beach 107","url":"https://www.youtube.com/watch?v=FXbo0QnioBU","thumbnail":"https://img.youtube.com/vi/FXbo0QnioBU/hqdefault.jpg"},{"title":"VICTORIA 3: Let\'s Play Canada! - Ep 10","url":"https://www.youtube.com/watch?v=YR6xfn-sGHk","thumbnail":"https://img.youtube.com/vi/YR6xfn-sGHk/hqdefault.jpg"},{"title":"A Truely Awful Start with no good tiles or room to expand - Kongo Ep.1","url":"https://www.youtube.com/watch?v=1-nbXy9Nrdw","thumbnail":"https://img.youtube.com/vi/1-nbXy9Nrdw/hqdefault.jpg"},{"title":"How to extract BIG YIELDS from desert tiles","url":"https://www.youtube.com/watch?v=ykLMm0zpDwg","thumbnail":"https://img.youtube.com/vi/ykLMm0zpDwg/hqdefault.jpg"},{"title":"TURBO DEVO.EXE","url":"https://www.youtube.com/watch?v=Xctubt7JE1Y","thumbnail":"https://img.youtube.com/vi/Xctubt7JE1Y/hqdefault.jpg"},{"title":"Start a New City Like a City Planning Pro in Cities Skylines! (2022)","url":"https://www.youtube.com/watch?v=9ASR9TclmaQ","thumbnail":"https://img.youtube.com/vi/9ASR9TclmaQ/hqdefault.jpg"},{"title":"VICTORIA 3 MAJOR UPDATES - New War System, Diplomacy, Events & So Much MORE!","url":"https://www.youtube.com/watch?v=asPE7WCGc1I","thumbnail":"https://img.youtube.com/vi/asPE7WCGc1I/hqdefault.jpg"},{"title":"CERTIFIED BOCEK MOMENT","url":"https://www.youtube.com/watch?v=w9vkiE6NDLs","thumb":"https://img.youtube.com/vi/w9vkiE6NDLs/hqdefault.jpg"}],"programming":[{"title":"Title","url":"url","thumbnail":"thumbnail"}]}}');
+
+/***/ })
+
+});
