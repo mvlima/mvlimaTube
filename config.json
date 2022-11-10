@@ -3,6 +3,16 @@
   "position": "Front-End Web Developer",
   "github": "mvlima",
   "banner": "https://images.unsplash.com/photo-1617803676663-3aa36f6d148c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+  "favorites": [
+    {
+      "tag": "filipedeschamps",
+      "picture": "https://github.com/filipedeschamps.png"
+    },
+    { "tag": "peas", "picture": "https://github.com/peas.png" },
+    { "tag": "jpgutti", "picture": "https://github.com/jpgutti.png" },
+    { "tag": "devsoutinho", "picture": "https://github.com/devsoutinho.png" },
+    { "tag": "gatamura", "picture": "https://github.com/gatamura.png" }
+  ],
   "playlists": {
     "games": [
       {

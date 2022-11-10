@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import Favorites from "../src/components/Favorites";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <Menu />
         <Header />
         <Timeline playlists={config.playlists} />
+        <Favorites favorites={config.favorites} />
       </div>
     </>
   );
@@ -42,6 +44,8 @@ const StyledHeader = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 92.5rem;
+    margin: 0 auto;
     padding: 1rem 2rem;
     gap: 1rem;
   }
