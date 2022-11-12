@@ -36,14 +36,12 @@ export const StyledFavories = styled.div`
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1rem;
-    color: #000000;
+    color: ${({ theme }) => theme.textColorBase || "#222222"};
   }
 `;
 
 export default function Favorites(props) {
   const favoritesList = Object.keys(props.favorites);
-
-  console.log({ favoritesList });
 
   return (
     <StyledFavories>
