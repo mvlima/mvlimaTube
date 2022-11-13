@@ -24,9 +24,7 @@ const theme = {
 
 function ProviderWrapper(props) {
   return (
-    <ColorModeProvider initialMode={"light"}>
-      {props.children}
-    </ColorModeProvider>
+    <ColorModeProvider initialMode={"dark"}>{props.children}</ColorModeProvider>
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const ColorModeContext = React.createContext({
-  mode: "light",
+  mode: "dark",
   setMode: () => {
     alert("set me up first!");
   },

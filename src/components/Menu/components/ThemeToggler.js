@@ -6,9 +6,9 @@ const StyledThemeToggler = styled.div`
   background-color: #333333;
   border: 0;
   padding: 3px;
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 50px;
-  height: 25px;
+  height: 26px;
   display: flex;
   justify-content: space-around;
   border-radius: 10000px;
@@ -20,8 +20,8 @@ const StyledThemeToggler = styled.div`
 
   span {
     display: inline-flex;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     align-items: center;
     justify-content: center;
   }
@@ -30,8 +30,8 @@ const StyledThemeToggler = styled.div`
     content: "";
     background-color: #fafafa;
     border: 1px solid #333333;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
     position: absolute;
     top: 0;

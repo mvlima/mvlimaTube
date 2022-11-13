@@ -3,17 +3,25 @@ import Search from "./components/Search";
 import ThemeToggler from "./components/ThemeToggler";
 
 const StyledMenu = styled.header`
-  display: flex;
-  flex-direction: row;
   height: 3.5rem;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background-color: ${({ theme }) => theme.backgroundLevel1 || "#FFFFFF"};
   border: 1px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
-  padding: 0 1rem;
-  gap: 1rem;
   position: fixed;
   width: 100%;
+
+  .menu-wrapper {
+    width: 100%;
+    max-width: 92.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 
   .logo {
     width: 100%;
@@ -31,9 +39,11 @@ const StyledMenu = styled.header`
 export default function Menu({ searchValue, setSearchValue }) {
   return (
     <StyledMenu>
-      <Logo />
-      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
-      <ThemeToggler />
+      <div className="menu-wrapper">
+        <Logo />
+        <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+        <ThemeToggler />
+      </div>
     </StyledMenu>
   );
 }
