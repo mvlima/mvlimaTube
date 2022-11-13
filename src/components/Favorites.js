@@ -51,7 +51,7 @@ export default function Favorites(props) {
         {favoritesList.map((favorites) => {
           const favorite = props.favorites[favorites];
           return (
-            <div>
+            <div key={favorite.tag}>
               <a href={`github.com/${favorite.tag}`} className="favorite">
                 <img
                   className="favorite-profile-picture"

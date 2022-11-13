@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import config from "../config.json";
-import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import Favorites from "../src/components/Favorites";
@@ -11,7 +10,6 @@ function HomePage() {
 
   return (
     <>
-      <CSSReset />
       <div
         style={{
           display: "flex",
@@ -32,6 +30,8 @@ function HomePage() {
 export default HomePage;
 
 const StyledHeader = styled.div`
+  background-color: ${({ theme }) => theme.backgroundLevel1};
+
   .profile-picture {
     width: 5rem;
     height: 5rem;

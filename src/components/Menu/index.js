@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Search from "./components/Search";
+import ThemeToggler from "./components/ThemeToggler";
 
 const StyledMenu = styled.header`
   display: flex;
@@ -32,6 +33,7 @@ export default function Menu({ searchValue, setSearchValue }) {
     <StyledMenu>
       <Logo />
       <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+      <ThemeToggler />
     </StyledMenu>
   );
 }
