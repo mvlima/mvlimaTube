@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import AddVideo from "../src/components/AddVideo";
 import { CSSReset } from "../src/components/CSSReset";
 import ColorModeProvider, {
   ColorModeContext,
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme[context.mode]}>
       <CSSReset />
       <Component {...pageProps} />
+      <AddVideo />
     </ThemeProvider>
   );
 }
