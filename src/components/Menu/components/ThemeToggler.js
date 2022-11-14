@@ -7,15 +7,17 @@ const StyledThemeToggler = styled.div`
   border: 0;
   padding: 3px;
   font-size: 0.75rem;
-  width: 50px;
-  height: 26px;
+  width: 3.125rem;
+  height: 1.625rem;
   display: flex;
   justify-content: space-around;
   border-radius: 10000px;
   position: relative;
 
   label {
-    width: 50px;
+    width: 3.125rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   span {
