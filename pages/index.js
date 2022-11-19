@@ -3,10 +3,27 @@ import config from "../config.json";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import Favorites from "../src/components/Favorites";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import videoService from "../src/services/videoService";
 
 function HomePage() {
+  const service = videoService();
   const [searchValue, setSearchValue] = useState("");
+  const [playlists, setPlaylists] = useState({});
+
+  useEffect(() => {
+    service.getAllVideos().then(({ data }) => {
+      const newPlaylists = { ...playlists };
+
+      data.forEach((video) => {
+        !newPlaylists[video.playlist] && (newPlaylists[video.playlist] = []);
+
+        newPlaylists[video.playlist] = [video, ...newPlaylists[video.playlist]];
+      });
+
+      setPlaylists(newPlaylists);
+    });
+  }, []);
 
   return (
     <>
@@ -20,7 +37,7 @@ function HomePage() {
         {/* prop drilling */}
         <Menu searchValue={searchValue} setSearchValue={setSearchValue} />
         <Header />
-        <Timeline searchValue={searchValue} playlists={config.playlists} />
+        <Timeline searchValue={searchValue} playlists={playlists} />
         <Favorites favorites={config.favorites} />
       </div>
     </>
