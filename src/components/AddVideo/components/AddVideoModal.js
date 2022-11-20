@@ -1,6 +1,7 @@
-import { createClient } from "@supabase/supabase-js";
 import React from "react";
+import { createClient } from "@supabase/supabase-js";
 import useForm from "../hooks/useForm";
+import { TfiClose } from "react-icons/tfi";
 
 function getVideoId(url) {
   const videoId = url.split("v=")[1];
@@ -60,7 +61,7 @@ export default function AddVideoModal({ setIsVisible }) {
             setIsVisible(false);
           }}
         >
-          X
+          <TfiClose />
         </button>
         <input
           placeholder="Video Title"

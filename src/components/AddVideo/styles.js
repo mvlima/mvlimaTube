@@ -26,6 +26,10 @@ export const StyledAddVideo = styled.div`
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 
   button[type="submit"] {

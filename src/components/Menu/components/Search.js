@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+import { CiSearch } from "react-icons/ci";
 
 const StyledSearch = styled.div`
   display: flex;
   flex-direction: row;
   border: 1px solid ${({ theme }) => theme.borderBase};
-  max-width: 425px;
+  max-width: 26.5rem;
   width: 100%;
   border-radius: 2px;
   overflow: hidden;
@@ -18,6 +19,7 @@ const StyledSearch = styled.div`
     color: ${({ theme }) => theme.textColorBase};
     background-color: ${({ theme }) => theme.backgroundBase};
   }
+
   button {
     flex: 1;
     cursor: pointer;
@@ -25,11 +27,21 @@ const StyledSearch = styled.div`
     background-color: ${({ theme }) => theme.backgroundLevel2};
     box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
     border-left: 1px solid ${({ theme }) => theme.borderBase};
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @media (min-width: 600px) {
-      width: 64px;
-      height: 40px;
+      width: 4rem;
+      height: 2.5rem;
+    }
+
+    svg {
+      fill: ${({ theme }) => theme.textColorBase};
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 `;
@@ -44,7 +56,9 @@ export default function Search({ searchValue, setSearchValue }) {
         }}
         value={searchValue}
       />
-      <button>🔎</button>
+      <button>
+        <CiSearch />
+      </button>
     </StyledSearch>
   );
 }

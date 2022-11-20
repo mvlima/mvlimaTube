@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { ColorModeContext } from "./ColorMode";
+import { CiDark, CiLight } from "react-icons/ci";
 
 const StyledThemeToggler = styled.div`
-  background-color: #333333;
+  background-color: ${({ theme }) => theme.backgroundLevel3};
   border: 0;
   padding: 3px;
   font-size: 0.75rem;
@@ -26,12 +27,18 @@ const StyledThemeToggler = styled.div`
     height: 1.25rem;
     align-items: center;
     justify-content: center;
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: #fafafa;
+    }
   }
 
   label:before {
     content: "";
-    background-color: #fafafa;
-    border: 1px solid #333333;
+    background-color: ${({ theme }) => theme.backgroundLevel1};
+    border: 1px solid ${({ theme }) => theme.backgroundLevel3};
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
@@ -65,8 +72,12 @@ export default function ThemeToggler() {
         }}
       />
       <label htmlFor="dark-mode" className="dark-mode-switch">
-        <span>🌙</span>
-        <span>☀️</span>
+        <span>
+          <CiDark />
+        </span>
+        <span>
+          <CiLight />
+        </span>
       </label>
     </StyledThemeToggler>
   );
