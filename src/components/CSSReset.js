@@ -37,4 +37,25 @@ export const CSSReset = createGlobalStyle`
       opacity: .5;
     }
   }
+
+    /* width */
+    ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: ${({ theme }) => theme.backgroundBase};
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.backgroundLevel1};
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${({ theme }) => theme.backgroundLevel1};
+  }
 `;
