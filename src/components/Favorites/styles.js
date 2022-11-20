@@ -4,7 +4,7 @@ export const StyledFavories = styled.div`
   max-width: 92.5rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
   overflow: hidden;
 
   .favorites-title {
@@ -15,7 +15,7 @@ export const StyledFavories = styled.div`
 
   .favorites-list {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .favorite-profile-picture {

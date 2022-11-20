@@ -38,6 +38,7 @@ export const StyledTimeline = styled.div`
       grid-auto-columns: minmax(12.5rem, 1fr);
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
 
       a {
         scroll-snap-align: start;
