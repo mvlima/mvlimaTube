@@ -11,15 +11,17 @@ const theme = {
     backgroundBase: "#f9f9f9",
     backgroundLevel1: "#ffffff",
     backgroundLevel2: "#f0f0f0",
+    backgroundLevel3: "#6B728E",
     borderBase: "#e5e5e5",
-    textColorBase: "#222222",
+    textColorBase: "#1c1c1c",
   },
   dark: {
-    backgroundBase: "#181818",
-    backgroundLevel1: "#202020",
-    backgroundLevel2: "#313131",
-    borderBase: "#383838",
-    textColorBase: "#FFFFFF",
+    backgroundBase: "#474E68",
+    backgroundLevel1: "#404258",
+    backgroundLevel2: "#50577A",
+    backgroundLevel3: "#6B728E",
+    borderBase: "#404258",
+    textColorBase: "#FAFAFA",
   },
 };
 
